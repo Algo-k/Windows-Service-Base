@@ -1,0 +1,38 @@
+﻿Build started 4/8/2024 10:23:25 AM.
+Logging verbosity is set to: Normal.     1>Project "C:\Users\1022\Desktop\ServiceStaticLib\ServiceStaticLib.vcxproj" on node 2 (Rebuild target(s)).
+     1>PrepareForBuild:
+         Creating directory "x64\Debug\ServiceStaticLib.tlog\".
+       InitializeBuildStatus:
+         Creating "x64\Debug\ServiceStaticLib.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+       ClCompile:
+         C:\Program Files\Microsoft Visual Studio\2022\Enterprise\VC\Tools\MSVC\14.30.30705\bin\HostX64\x64\CL.exe /c /ZI /JMC /nologo /W3 /WX- /diagnostics:column /sdl /Od /D _DEBUG /D _LIB /D _UNICODE /D UNICODE /Gm- /EHsc /RTC1 /MTd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /permissive- /Yc"pch.h" /Fp"x64\Debug\ServiceStaticLib.pch" /Fo"x64\Debug\\" /Fd"C:\Users\1022\Desktop\ServiceStaticLib\x64\Debug\ServiceStaticLib.pdb" /external:W3 /Gd /TP /FC /errorReport:prompt pch.cpp
+         pch.cpp
+         C:\Program Files\Microsoft Visual Studio\2022\Enterprise\VC\Tools\MSVC\14.30.30705\bin\HostX64\x64\CL.exe /c /ZI /JMC /nologo /W3 /WX- /diagnostics:column /sdl /Od /D _DEBUG /D _LIB /D _UNICODE /D UNICODE /Gm- /EHsc /RTC1 /MTd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /permissive- /Yu"pch.h" /Fp"x64\Debug\ServiceStaticLib.pch" /Fo"x64\Debug\\" /Fd"C:\Users\1022\Desktop\ServiceStaticLib\x64\Debug\ServiceStaticLib.pdb" /external:W3 /Gd /TP /FC /errorReport:prompt ServiceBase.cpp ServiceInstaller.cpp ServiceStaticLib.cpp
+         ServiceBase.cpp
+         ServiceInstaller.cpp
+     1>C:\Users\1022\Desktop\ServiceStaticLib\ServiceInstaller.cpp(104,16): warning C4477: 'printf' : format string '%s' requires an argument of type 'char *', but variadic argument 1 has type 'const std::wstring'
+         ServiceStaticLib.cpp
+         Generating Code...
+     1>C:\Users\1022\Desktop\ServiceStaticLib\ServiceInstaller.cpp(541): warning C4715: 'ServiceInstaller::DoStopSvc': not all control paths return a value
+       Lib:
+         C:\Program Files\Microsoft Visual Studio\2022\Enterprise\VC\Tools\MSVC\14.30.30705\bin\HostX64\x64\Lib.exe /OUT:"C:\Users\1022\Desktop\ServiceStaticLib\x64\Debug\ServiceStaticLib.lib" /NOLOGO /MACHINE:X64 x64\Debug\pch.obj
+         x64\Debug\ServiceBase.obj
+         x64\Debug\ServiceInstaller.obj
+         x64\Debug\ServiceStaticLib.obj
+         ServiceStaticLib.vcxproj -> C:\Users\1022\Desktop\ServiceStaticLib\x64\Debug\ServiceStaticLib.lib
+       FinalizeBuildStatus:
+         Deleting file "x64\Debug\ServiceStaticLib.tlog\unsuccessfulbuild".
+         Touching "x64\Debug\ServiceStaticLib.tlog\ServiceStaticLib.lastbuildstate".
+     1>Done Building Project "C:\Users\1022\Desktop\ServiceStaticLib\ServiceStaticLib.vcxproj" (Rebuild target(s)).
+
+Build succeeded.
+
+       "C:\Users\1022\Desktop\ServiceStaticLib\ServiceStaticLib.vcxproj" (Rebuild target) (1) ->
+       (ClCompile target) -> 
+         C:\Users\1022\Desktop\ServiceStaticLib\ServiceInstaller.cpp(104,16): warning C4477: 'printf' : format string '%s' requires an argument of type 'char *', but variadic argument 1 has type 'const std::wstring'
+         C:\Users\1022\Desktop\ServiceStaticLib\ServiceInstaller.cpp(541): warning C4715: 'ServiceInstaller::DoStopSvc': not all control paths return a value
+
+    2 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:33.46
